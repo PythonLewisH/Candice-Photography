@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  box-sizing: border-box;
+}
+
+
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 1.3rem;
+}
+
+ul.navbar-vertical {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 18%;
+  background-color: #807F81;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  /* text-align: center; */
+
+}
+
+ul h1 {
+  color: white;
+  padding-left: 20px;
+  font-size: 1.3rem;
+}
+
+.navbar-vertical li a {
+  display: block;
+  color: white;
+  padding: 8px 20px;
+  text-decoration: none;
+  font-size: .9rem;
+}
+
+.navbar-vertical li a.active {
+  background-color: white;
+  color: #FFAC92;
+}
+
+.navbar-vertical li a:hover:not(.active) {
+  background-color: white;
+  color: #FFAC92;
+}
+
+.container-nav {
+/* text-align: center; */
+padding: 30px 0;
+}
+
+.container-fluid1 {
+  padding: 3% 7%;
+}
+
+.container-flex {
+  display: flex;
+  padding: 3% 7%;
+}
+
+.navbar-vertical {
+  /* display: none; */
+}
+
+.navbar-horizontal {
+  display: none;
+}
+
+
+.navbar-icon-div {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-icons {
+  padding: 2px 6px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-icons:hover {
+  color: #FFAC92;
+}
+
+.container-nav h1 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.main-section {
+color: #595959;
+margin-left: 20%;
+padding: 0;
+height: 100%;
+}
+
+.background-h-nav {
+  background-color: #807F81;
+  color: white;
+}
+
+.title-h-nav {
+  color: white;
+  padding-left: 40px;
+}
+
+.link-h-nav {
+  color:white
+}
+
+.navbar.navbar-dark .navbar-toggler-icon {
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.nav-link.active {
+  color: #FFAC92 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #FFAC92 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:not(.active):not(:hover) {
+    color: rgba(255,255,255)!important;
+}
+
+button:focus, button:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+
+.footer {
+  display: none;
+  background-color: #807F81;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+}
+
+.footer a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+
+/* NAV HORIZONTAL */
+.nabbar-horizontal {
+  /* display: none; */
+}
+
+/* ABOUT ME */
+.about-me {
+  padding: 20px;
+}
+
+.about-img {
+  height: fit-content;
+  width: 35%;
+  margin: 20px 40px 20px 0;
+  float: left;
+}
+
+.about-text p {
+  text-align: justify;
+  margin: 30px;
+}
+
+.about-text h1 {
+  padding: 20px 0;
+  color: black;
+}
+
+
+/* PHOTOGRAPHY PAGE */
+
+.gallery {
+  column-count: 3;
+  column-gap: 4px;
+}
+
+.image-container {
+  position: relative;
+  margin: 4px 0;
+}
+
+.caption {
+  font-size: .9rem;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+  background: rgba(0,0,0,0.6);
+  border-top: none;
+  opacity: 0;
+  transition: opacity 0.25s;
+  width: 100%;
+  line-height: 1.2;
+  padding: 0 2px 2px;
+}
+
+
+.image-container:hover .caption {
+opacity: 1;
+}
+
+
+.gallery-img {
+  width: 100% !important;
+  height: auto !important;
+  cursor: pointer;
+}
+
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  display: none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox .main-image {
+  position: absolute;
+  max-width: 90%;
+  max-height: 80%;
+  padding: 4px;
+  background-color: white;
+  border: 2px solid white;
+}
+
+#lightbox .close-image {
+  position: absolute;
+  right:2%;
+  top: 2%;
+  max-width: 50px;
+  margin: 10px;
+
+}
+
+.close {
+  display:none;
+  height: 40px;
+  color: red;
+}
+
+/* ENQUIRIES PAGE */
+
+
+
+/* WIDE MONITORS */
+@media (min-width:1400px) {
+}
+
+
+
+/*  TABLET */
+@media (max-width: 991px) {
+  .about-img {
+    float: none;
+    margin: 0;
+    padding: 30px 0 20px;
+    width: 40%;
+  }
+
+  .about-me {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .gallery {
+    column-count: 2;
+  }
+
+  .main-section {
+  margin-left: 0;
+  }
+
+  .navbar-vertical {
+    display: none;
+  }
+
+  .navbar-horizontal {
+     display: block;
+  }
+
+  .navbar .navbar-toggler {
+    border-color: rgb(255, 255, 255);
+}
+
+.footer {
+  display: flex;
+}
+
+#lightbox .main-image {
+  top: 150px;
+}
+
+#lightbox .close-image {
+  top:10%;
+}
+
+}
+
+  /* changing nav navbar: */
+
+
+
+
+
+
+
+/* MOBILE */
+@media (max-width: 576px) {
+}
